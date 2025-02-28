@@ -1,0 +1,84 @@
+/* Apply a sleek, modern gradient background */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Deep Blue Gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+/* Elegant glassmorphic container */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 480px;
+    width: 90%;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Hover effect */
+.container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Stylish typography */
+p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Elegant button design */
+button {
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 16px;
+    box-shadow: 0 6px 18px rgba(0, 123, 255, 0.5);
+}
+
+/* Button hover effect */
+button:hover {
+    background: linear-gradient(135deg, #00d4ff, #007bff);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 24px;
+    }
+    
+    p {
+        font-size: 1.1rem;
+    }
+    
+    button {
+        font-size: 0.95rem;
+        padding: 10px 16px;
+    }
+}
